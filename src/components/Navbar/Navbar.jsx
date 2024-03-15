@@ -11,7 +11,7 @@ const Navbar = () => {
             <a href="">Search</a>
           </div>
         </div>
-        <div className="flex-none gap-2">
+        <div className="md:flex gap-2 hidden">
           <div className="form-control">
             <input
               type="text"
