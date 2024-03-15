@@ -1,0 +1,115 @@
+[
+    {
+      "recipe_id": "001",
+      "recipe_name": "Classic Spaghetti Carbonara",
+      "short_description": "A traditional Italian pasta dish made with eggs, cheese, pancetta, and black pepper.",
+      "ingredients": [
+        "Spaghetti (200g)",
+        "Eggs (2 large)",
+        "Pancetta or bacon (100g, diced)",
+        "Parmesan cheese (50g, grated)",
+        "Black pepper (to taste)",
+        "Salt (to taste)"
+      ],
+      "preparing_time": "30",
+      "calories": "400",
+      "recipe_image": "https://i.ibb.co/8cgfY3L/1.jpg"
+    },
+    {
+      "recipe_id": "002",
+      "recipe_name": "Grilled Lemon Herb Chicken",
+      "short_description": "Juicy chicken breasts marinated in a zesty lemon herb sauce and grilled to perfection.",
+      "ingredients": [
+        "Chicken breasts (4, boneless and skinless)",
+        "Lemon (2, juiced and zested)",
+        "Garlic cloves (3, minced)",
+        "Fresh rosemary (2 tablespoons, chopped)",
+        "Fresh thyme (2 tablespoons, chopped)",
+        "Olive oil (4 tablespoons)",
+        "Salt (to taste)",
+        "Black pepper (to taste)"
+      ],
+      "preparing_time": "40",
+      "calories": "250",
+      "recipe_image": "https://i.ibb.co/VSCsv25/2.jpg"
+    },
+    {
+      "recipe_id": "003",
+      "recipe_name": "Vegetable Stir-Fry with Tofu",
+      "short_description": "A colorful and nutritious stir-fry featuring a variety of vegetables and tofu.",
+      "ingredients": [
+        "Firm tofu (200g, cubed)",
+        "Broccoli (1 head, florets)",
+        "Carrots (2, julienned)",
+        "Bell peppers (1 red, 1 yellow, sliced)",
+        "Snow peas (100g)",
+        "Soy sauce (3 tablespoons)",
+        "Sesame oil (2 tablespoons)",
+        "Garlic (2 cloves, minced)",
+        "Ginger (1 tablespoon, grated)",
+        "Cooking oil (2 tablespoons)",
+        "Salt (to taste)",
+        "Black pepper (to taste)"
+      ],
+      "preparing_time": "25",
+      "calories": "300",
+      "recipe_image": "https://i.ibb.co/PD35Jjc/3.jpg"
+    },
+    {
+      "recipe_id": "004",
+      "recipe_name": "Homemade Margherita Pizza",
+      "short_description": "A classic pizza topped with fresh tomatoes, mozzarella cheese, and basil leaves.",
+      "ingredients": [
+        "Pizza dough (1 ball, store-bought or homemade)",
+        "Tomatoes (2, thinly sliced)",
+        "Fresh mozzarella cheese (200g, sliced)",
+        "Fresh basil leaves (a handful)",
+        "Olive oil (2 tablespoons)",
+        "Garlic cloves (2, minced)",
+        "Salt (to taste)",
+        "Black pepper (to taste)"
+      ],
+      "preparing_time": "45",
+      "calories": "300",
+      "recipe_image": "https://i.ibb.co/k8HRDnw/4.jpg"
+    },
+    {
+      "recipe_id": "005",
+      "recipe_name": "Creamy Mushroom Risotto",
+      "short_description": "A comforting Italian rice dish cooked with mushrooms, onions, and Parmesan cheese.",
+      "ingredients": [
+        "Arborio rice (200g)",
+        "Mushrooms (250g, sliced)",
+        "Onion (1, finely chopped)",
+        "Garlic cloves (2, minced)",
+        "Vegetable broth (4 cups, heated)",
+        "White wine (1/2 cup)",
+        "Butter (2 tablespoons)",
+        "Parmesan cheese (50g, grated)",
+        "Fresh parsley (2 tablespoons, chopped)",
+        "Salt (to taste)",
+        "Black pepper (to taste)"
+      ],
+      "preparing_time": "35",
+      "calories": "350",
+      "recipe_image": "https://i.ibb.co/hH0hyXp/5.jpg"
+    },
+    {
+      "recipe_id": "006",
+      "recipe_name": "Berry Smoothie Bowl",
+      "short_description": "A refreshing breakfast bowl packed with mixed berries, banana, and granola.",
+      "ingredients": [
+        "Mixed berries (1 cup, frozen or fresh)",
+        "Banana (1, sliced)",
+        "Greek yogurt (1/2 cup)",
+        "Honey (1 tablespoon)",
+        "Granola (1/4 cup)",
+        "Almond slices (2 tablespoons)",
+        "Chia seeds (1 tablespoon)",
+        "Coconut flakes (1 tablespoon)"
+      ],
+      "preparing_time": "10",
+      "calories": "200",
+      "recipe_image": "https://i.ibb.co/48nh8xC/6.jpg"
+    }
+  ]
