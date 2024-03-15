@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe , handleCookBtn}) => {
   const{id, name, image ,short_description , ingredients ,calories ,preparing_time} = recipe
-
+  
   return (
     <div>
       <div className="card bg-base-100 shadow-xl h-full">
@@ -24,7 +24,7 @@ const Recipe = ({ recipe }) => {
                 <div className="flex items-center gap-2"><span className="material-symbols-outlined">local_fire_department</span>{calories} calories</div>
             </div>
           <div className="card-actions">
-            <button className="btn bg-[#0BE58A]">Want to cook</button>
+            <button onClick={()=>{handleCookBtn(recipe)}} className="btn bg-[#0BE58A]">Want to cook</button>
           </div>
         </div>
       </div>
@@ -33,6 +33,7 @@ const Recipe = ({ recipe }) => {
 };
 Recipe.propTypes = {
   recipe: PropTypes.object,
+  handleCookBtn:PropTypes.func,
 };
 
 export default Recipe;

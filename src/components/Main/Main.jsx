@@ -1,6 +1,20 @@
+import { useState } from "react";
 import Recipes from "../Recipes/Recipes";
 
 const Main = () => {
+    const [recipeArray , setRecipeArray] = useState([])
+    const handleCookBtn =(recipe)=>{
+        const allReadyExist = recipeArray.find(i => i.id === recipe.id)
+        if (!allReadyExist) {
+            const newRecieArray = [...recipeArray, recipe]
+        setRecipeArray(newRecieArray)
+        }else{
+            alert("matha nosto naki")
+        }
+        
+    }
+    console.log(recipeArray);
+
   return (
     <div className="container mx-auto p-4 lg:mt-28 mt-10">
         <div className=" text-center">
@@ -9,7 +23,7 @@ const Main = () => {
         </div>
       <div className=" flex justify-between">
         {/* other component */}
-        <Recipes></Recipes>
+        <Recipes handleCookBtn={handleCookBtn} ></Recipes>
         <div>right</div>
       </div>
     </div>
