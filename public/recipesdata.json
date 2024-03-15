@@ -1,7 +1,7 @@
 [
     {
-      "recipe_id": "001",
-      "recipe_name": "Classic Spaghetti Carbonara",
+      "id": "001",
+      "name": "Classic Spaghetti Carbonara",
       "short_description": "A traditional Italian pasta dish made with eggs, cheese, pancetta, and black pepper.",
       "ingredients": [
         "Spaghetti (200g)",
@@ -13,11 +13,11 @@
       ],
       "preparing_time": "30",
       "calories": "400",
-      "recipe_image": "https://i.ibb.co/8cgfY3L/1.jpg"
+      "image": "https://i.ibb.co/8cgfY3L/1.jpg"
     },
     {
-      "recipe_id": "002",
-      "recipe_name": "Grilled Lemon Herb Chicken",
+      "id": "002",
+      "name": "Grilled Lemon Herb Chicken",
       "short_description": "Juicy chicken breasts marinated in a zesty lemon herb sauce and grilled to perfection.",
       "ingredients": [
         "Chicken breasts (4, boneless and skinless)",
@@ -31,11 +31,11 @@
       ],
       "preparing_time": "40",
       "calories": "250",
-      "recipe_image": "https://i.ibb.co/VSCsv25/2.jpg"
+      "image": "https://i.ibb.co/VSCsv25/2.jpg"
     },
     {
-      "recipe_id": "003",
-      "recipe_name": "Vegetable Stir-Fry with Tofu",
+      "id": "003",
+      "name": "Vegetable Stir-Fry with Tofu",
       "short_description": "A colorful and nutritious stir-fry featuring a variety of vegetables and tofu.",
       "ingredients": [
         "Firm tofu (200g, cubed)",
@@ -53,11 +53,11 @@
       ],
       "preparing_time": "25",
       "calories": "300",
-      "recipe_image": "https://i.ibb.co/PD35Jjc/3.jpg"
+      "image": "https://i.ibb.co/PD35Jjc/3.jpg"
     },
     {
-      "recipe_id": "004",
-      "recipe_name": "Homemade Margherita Pizza",
+      "id": "004",
+      "name": "Homemade Margherita Pizza",
       "short_description": "A classic pizza topped with fresh tomatoes, mozzarella cheese, and basil leaves.",
       "ingredients": [
         "Pizza dough (1 ball, store-bought or homemade)",
@@ -71,11 +71,11 @@
       ],
       "preparing_time": "45",
       "calories": "300",
-      "recipe_image": "https://i.ibb.co/k8HRDnw/4.jpg"
+      "image": "https://i.ibb.co/k8HRDnw/4.jpg"
     },
     {
-      "recipe_id": "005",
-      "recipe_name": "Creamy Mushroom Risotto",
+      "id": "005",
+      "name": "Creamy Mushroom Risotto",
       "short_description": "A comforting Italian rice dish cooked with mushrooms, onions, and Parmesan cheese.",
       "ingredients": [
         "Arborio rice (200g)",
@@ -92,11 +92,11 @@
       ],
       "preparing_time": "35",
       "calories": "350",
-      "recipe_image": "https://i.ibb.co/hH0hyXp/5.jpg"
+      "image": "https://i.ibb.co/hH0hyXp/5.jpg"
     },
     {
-      "recipe_id": "006",
-      "recipe_name": "Berry Smoothie Bowl",
+      "id": "006",
+      "name": "Berry Smoothie Bowl",
       "short_description": "A refreshing breakfast bowl packed with mixed berries, banana, and granola.",
       "ingredients": [
         "Mixed berries (1 cup, frozen or fresh)",
@@ -110,6 +110,6 @@
       ],
       "preparing_time": "10",
       "calories": "200",
-      "recipe_image": "https://i.ibb.co/48nh8xC/6.jpg"
+      "image": "https://i.ibb.co/48nh8xC/6.jpg"
     }
   ]
