@@ -1,21 +1,32 @@
-const Cooking = () => {
+import Cookingdata from "../Cookingdata/Cookingdata";
+import PropTypes from "prop-types";
+const Cooking = ({cookingRecipe}) => {
+  console.log(cookingRecipe.length);
   return (
-    <div>
-      <table className="w-full border-t-2 mt-4">
+    <div className="mt-10">
+      <table className="w-full">
         <tr>
-          <th colSpan={"4"}> cooking</th>
+          <th colSpan={"4"} className="text-2xl font-semibold border-b-2 pb-3">
+            Currently cooking: 0<span>{cookingRecipe.length}</span>
+          </th>
         </tr>
-        <tr className="flex justify-between items-center mt-2 bg-slate-300 p-2 rounded-xl">
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>
-            <button className="btn">click me</button>
-          </td>
-        </tr>
+
+        <div>
+          <tr className="flex justify-between text-center items-center mt-2  p-2 rounded-xl ">
+            <td className=" opacity-70"></td>
+            <td className="flex-1 opacity-70">Name</td>
+            <td className="flex-1 opacity-70">Time</td>
+            <td className="flex-1 opacity-70">Calories</td>
+          </tr>
+          {
+            cookingRecipe.map((cRecipe , index)=><Cookingdata key={index} cRecipe={cRecipe} index={index}></Cookingdata>)
+          }
+        </div>
       </table>
     </div>
   );
 };
-
+Cooking.propTypes = {
+  cookingRecipe:PropTypes.array,
+};
 export default Cooking;

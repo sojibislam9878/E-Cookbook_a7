@@ -1,19 +1,23 @@
 import PropTypes from "prop-types";
-const Wantcookdata = ({ rec }) => {
-    const {id , name } = rec
+const Wantcookdata = ({ rec ,inx , handlePreparingBtn}) => {
+    const {name,preparing_time ,calories } = rec
   return (
     <>
-      <tr className="flex justify-between items-center mt-2 bg-slate-300 p-2 rounded-xl">
-      <td>{id}</td>
-      <td>{name}</td>
-      <td>3</td>
-      <td>3</td>
-      <td><button className="btn">click me</button></td>
+      <tr className="flex justify-between items-center text-center mt-2 bg-slate-100 p-2 rounded-xl">
+      <td className="p-4">{inx+1}</td>
+      <td className="flex-1 opacity-70">{name}</td>
+      <td className="flex-1 opacity-70">{preparing_time}</td>
+      <td className="flex-1 opacity-70">{calories}</td>
+      <td className="flex-1">
+        <button onClick={()=>{handlePreparingBtn(rec)}} className="btn bg-[#0BE58A] rounded-full">Preparing</button>
+      </td>
       </tr>
     </>
   );
 };
 Wantcookdata.propTypes = {
   rec:PropTypes.object,
+  inx:PropTypes.number,
+  handlePreparingBtn:PropTypes.func,
 };
 export default Wantcookdata;
