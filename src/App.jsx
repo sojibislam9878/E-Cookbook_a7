@@ -6,11 +6,11 @@ import Navbar from './components/Navbar/Navbar'
 function App() {
 
   return (
-    <>
+    <div className='font-lexend'>
       <Navbar></Navbar>
       <Banner></Banner>
       <Main></Main>
-    </>
+    </div>
   )
 }
 

@@ -7,12 +7,12 @@ const Recipes = ({handleCookBtn}) => {
     const [recipes, setRecipes]= useState([])
 
     useEffect(()=>{
-        fetch("./public/recipesdata.json")
+        fetch("./recipesdata.json")
         .then(res => res.json())
         .then(data => setRecipes(data))
     },[])
     return (
-        <div className="w-2/3 grid lg:grid-cols-2 gap-8">
+        <div className="lg:w-2/3 grid lg:grid-cols-2 gap-8">
             {
                 recipes.map(recipe=><Recipe key={recipe.id} recipe={recipe} handleCookBtn={handleCookBtn}></Recipe>)
             }

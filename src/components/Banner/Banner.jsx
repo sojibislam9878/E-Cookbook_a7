@@ -5,7 +5,7 @@ const Banner = () => {
         className="rounded-2xl"
         style={{
           backgroundImage:
-            "linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./src/assets/banner.jpg)",
+            "linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./banner.jpg)",
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',

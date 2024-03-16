@@ -13,7 +13,7 @@
       ],
       "preparing_time": "30",
       "calories": "400",
-      "image": "https://i.ibb.co/8cgfY3L/1.jpg"
+      "image": "https://i.ibb.co/86HtnJ5/1.jpg"
     },
     {
       "id": "002",
@@ -31,7 +31,7 @@
       ],
       "preparing_time": "40",
       "calories": "250",
-      "image": "https://i.ibb.co/VSCsv25/2.jpg"
+      "image": "https://i.ibb.co/GxjR4WF/2.jpg"
     },
     {
       "id": "003",
@@ -53,12 +53,12 @@
       ],
       "preparing_time": "25",
       "calories": "300",
-      "image": "https://i.ibb.co/PD35Jjc/3.jpg"
+      "image": "https://i.ibb.co/1sMCDzq/3.jpg"
     },
     {
       "id": "004",
       "name": "Homemade Margherita Pizza",
-      "short_description": "A classic pizza topped with fresh tomatoes, mozzarella cheese, and basil leaves.",
+      "short_description": "A pizza stir-fry featuring a variety of vegetables and tofu.",
       "ingredients": [
         "Pizza dough (1 ball, store-bought or homemade)",
         "Tomatoes (2, thinly sliced)",
@@ -71,13 +71,13 @@
       ],
       "preparing_time": "45",
       "calories": "300",
-      "image": "https://i.ibb.co/k8HRDnw/4.jpg"
+      "image": "https://i.ibb.co/GvKrf98/4.jpg"
     },
     {
       "id": "005",
       "name": "Creamy Mushroom Risotto",
-      "short_description": "A comforting Italian rice dish cooked with mushrooms, onions, and Parmesan cheese.",
-      "ingredients": [
+      "short_description": "A comforting Italian rice dish cooked with mushrooms, onions, and Parmesan cheese.", 
+     "ingredients": [
         "Arborio rice (200g)",
         "Mushrooms (250g, sliced)",
         "Onion (1, finely chopped)",
@@ -92,7 +92,7 @@
       ],
       "preparing_time": "35",
       "calories": "350",
-      "image": "https://i.ibb.co/hH0hyXp/5.jpg"
+      "image": "https://i.ibb.co/rdB8fpc/5.jpg"
     },
     {
       "id": "006",
@@ -110,6 +110,6 @@
       ],
       "preparing_time": "10",
       "calories": "200",
-      "image": "https://i.ibb.co/48nh8xC/6.jpg"
+      "image": "https://i.ibb.co/QmfLcs2/6.jpg"
     }
   ]

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Recipes from "../Recipes/Recipes";
+import Aside from "../Aside/Aside";
 
 const Main = () => {
     const [recipeArray , setRecipeArray] = useState([])
@@ -21,10 +22,10 @@ const Main = () => {
         <h1 className="text-4xl font-semibold">Our Recipes</h1>
         <p className="lg:w-2/3 mx-auto opacity-60 text- mt-6">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>
         </div>
-      <div className=" flex justify-between">
+      <div className="flex flex-col-reverse lg:flex-row justify-between gap-6">
         {/* other component */}
         <Recipes handleCookBtn={handleCookBtn} ></Recipes>
-        <div>right</div>
+        <Aside recipeArray={recipeArray}></Aside>
       </div>
     </div>
   );
