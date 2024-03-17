@@ -10,6 +10,10 @@ const Recipe = ({ recipe, handleCookBtn }) => {
     preparing_time,
   } = recipe;
 
+  const combineFucntion=()=>{
+    handleCookBtn(recipe)
+  }
+
   return (
     <div className="">
       <div className="card bg-base-100 shadow-xl h-full">
@@ -48,9 +52,7 @@ const Recipe = ({ recipe, handleCookBtn }) => {
           </div>
           <div className="card-actions">
             <button
-              onClick={() => {
-                handleCookBtn(recipe);
-              }}
+              onClick={combineFucntion}
               className="btn bg-[#0BE58A] rounded-full"
             >
               Want to cook

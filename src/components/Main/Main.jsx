@@ -1,8 +1,22 @@
 import { useState } from "react";
 import Recipes from "../Recipes/Recipes";
 import Aside from "../Aside/Aside";
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Main = () => {
+  const notify = () => {
+    toast.error('Recipe is all ready added', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
+  };
+
     const [recipeArray , setRecipeArray] = useState([])
     const handleCookBtn =(recipe)=>{
         const allReadyExist = recipeArray.find(i => i.id === recipe.id)
@@ -10,7 +24,7 @@ const Main = () => {
             const newRecieArray = [...recipeArray, recipe]
         setRecipeArray(newRecieArray)
         }else{
-            alert("matha nosto naki")
+            notify()
         }
         
     }
@@ -35,6 +49,7 @@ const Main = () => {
         <Recipes handleCookBtn={handleCookBtn} ></Recipes>
         <Aside recipeArray={recipeArray} handlePreparingBtn={handlePreparingBtn} cookingRecipe={cookingRecipe}></Aside>
       </div>
+      <ToastContainer/>
     </div>
   );
 };
