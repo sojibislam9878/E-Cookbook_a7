@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Wantcookdata from "../Wantcookdata/Wantcookdata";
-const Wantcook = ({ recipeArray , handlePreparingBtn}) => {
-    console.log(recipeArray.length);
+const Wantcook = ({ recipeArray, handlePreparingBtn }) => {
+  console.log(recipeArray.length);
   return (
     <div>
       <table className="w-full">
@@ -20,7 +20,12 @@ const Wantcook = ({ recipeArray , handlePreparingBtn}) => {
             <td className="flex-1 opacity-70"></td>
           </tr>
           {recipeArray.map((rec, inx) => (
-            <Wantcookdata key={inx} inx={inx} rec={rec} handlePreparingBtn={handlePreparingBtn}></Wantcookdata>
+            <Wantcookdata
+              key={inx}
+              inx={inx}
+              rec={rec}
+              handlePreparingBtn={handlePreparingBtn}
+            ></Wantcookdata>
           ))}
         </div>
       </table>
@@ -29,6 +34,6 @@ const Wantcook = ({ recipeArray , handlePreparingBtn}) => {
 };
 Wantcook.propTypes = {
   recipeArray: PropTypes.array,
-  handlePreparingBtn:PropTypes.func,
+  handlePreparingBtn: PropTypes.func,
 };
 export default Wantcook;

@@ -12,12 +12,17 @@ const Navbar = () => {
           </div>
         </div>
         <div className="md:flex gap-2 hidden">
-          <div className="form-control">
+          <div className="form-control relative">
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered w-24 md:w-auto outline-none rounded-full bg-slate-200"
+              className="input pl-10 input-bordered w-24 md:w-auto outline-none rounded-full bg-slate-200"
             />
+            <div>
+              <h1 className="absolute top-3 left-3">
+                <span className="material-symbols-outlined">search</span>
+              </h1>
+            </div>
           </div>
           <div className="dropdown dropdown-end">
             <div
@@ -25,8 +30,10 @@ const Navbar = () => {
               role="button"
               className="btn btn-ghost btn-circle avatar"
             >
-              <div className="w-10 rounded-full bg-green-500">
-                <span className="material-symbols-outlined text-4xl">person</span>
+              <div className="w-10 rounded-full bg-[#0BE58A]">
+                <span className="material-symbols-outlined text-4xl">
+                  person
+                </span>
               </div>
             </div>
             <ul

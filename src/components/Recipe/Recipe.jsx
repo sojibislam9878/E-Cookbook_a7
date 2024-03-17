@@ -10,9 +10,9 @@ const Recipe = ({ recipe, handleCookBtn }) => {
     preparing_time,
   } = recipe;
 
-  const combineFucntion=()=>{
-    handleCookBtn(recipe)
-  }
+  const combineFucntion = () => {
+    handleCookBtn(recipe);
+  };
 
   return (
     <div className="">

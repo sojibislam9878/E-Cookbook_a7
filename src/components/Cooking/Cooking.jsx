@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 import Cookingdata from "../Cookingdata/Cookingdata";
 import Timecounter from "../Timecounter/Timecounter";
-const Cooking = ({cookingRecipe}) => {
+const Cooking = ({ cookingRecipe }) => {
   console.log(cookingRecipe);
-  const time =cookingRecipe.map(function(num){
-    return num.preparing_time
-})
+  const time = cookingRecipe.map(function (num) {
+    return num.preparing_time;
+  });
 
-  const calories =cookingRecipe.map(function(cal){
-    return cal.calories
-  })
-console.log(calories);
+  const calories = cookingRecipe.map(function (cal) {
+    return cal.calories;
+  });
+  console.log(calories);
   return (
     <div className="mt-10">
       <table className="w-full">
@@ -27,18 +27,20 @@ console.log(calories);
             <td className="flex-1 opacity-70">Time</td>
             <td className="flex-1 opacity-70">Calories</td>
           </tr>
-          {
-            cookingRecipe.map((cRecipe , index)=><Cookingdata key={index} cRecipe={cRecipe} index={index}></Cookingdata>)
-          }
+          {cookingRecipe.map((cRecipe, index) => (
+            <Cookingdata
+              key={index}
+              cRecipe={cRecipe}
+              index={index}
+            ></Cookingdata>
+          ))}
         </div>
       </table>
-      {
-        <Timecounter time={time} calories={calories}></Timecounter>
-      }
+      {<Timecounter time={time} calories={calories}></Timecounter>}
     </div>
   );
 };
 Cooking.propTypes = {
-  cookingRecipe:PropTypes.array,
+  cookingRecipe: PropTypes.array,
 };
 export default Cooking;
