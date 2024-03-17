@@ -1,7 +1,16 @@
-import Cookingdata from "../Cookingdata/Cookingdata";
 import PropTypes from "prop-types";
+import Cookingdata from "../Cookingdata/Cookingdata";
+import Timecounter from "../Timecounter/Timecounter";
 const Cooking = ({cookingRecipe}) => {
-  console.log(cookingRecipe.length);
+  console.log(cookingRecipe);
+  const time =cookingRecipe.map(function(num){
+    return num.preparing_time
+})
+
+  const calories =cookingRecipe.map(function(cal){
+    return cal.calories
+  })
+console.log(calories);
   return (
     <div className="mt-10">
       <table className="w-full">
@@ -13,7 +22,7 @@ const Cooking = ({cookingRecipe}) => {
 
         <div>
           <tr className="flex justify-between text-center items-center mt-2  p-2 rounded-xl ">
-            <td className=" opacity-70"></td>
+            <td className="p-4 opacity-70"></td>
             <td className="flex-1 opacity-70">Name</td>
             <td className="flex-1 opacity-70">Time</td>
             <td className="flex-1 opacity-70">Calories</td>
@@ -23,6 +32,9 @@ const Cooking = ({cookingRecipe}) => {
           }
         </div>
       </table>
+      {
+        <Timecounter time={time} calories={calories}></Timecounter>
+      }
     </div>
   );
 };
